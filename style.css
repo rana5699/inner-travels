@@ -240,6 +240,7 @@ nav ul li {
 }
 .content {
   text-align: left;
+  width: 80%;
 }
 .content-title {
   color: rgb(58, 58, 58);
