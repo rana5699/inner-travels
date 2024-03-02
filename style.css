@@ -10,8 +10,11 @@ body {
 }
 .line {
   border: 1px solid black;
-  width: 100%;
+  width: 90%;
   margin: 3% auto;
+}
+#button {
+  width: 90%;
 }
 
 /* ? fonst awsome icon styles START  here  */
@@ -348,7 +351,7 @@ nav ul li {
   border-radius: 10px;
 }
 .input {
-  width: 250px;
+  width: 90%;
   border-radius: 8px;
   padding: 8px;
   margin: 10px auto;
@@ -390,33 +393,16 @@ nav ul li {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 5% auto 2%;
-  padding: 20px;
+  height: 250px;
+  margin: 2% auto;
 }
-.logo {
-  color: rgb(255, 84, 0);
-  font-size: 35px;
-  text-align: center;
-}
-.line {
-  background-color: red;
-}
-.fa-globe {
-  font-size: 35px;
-  margin-right: 10px;
+.footer-logo {
+  margin: 0% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer-title {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 5px auto;
-}
-
-.footer-desc {
-  font-size: 18px;
-  font-weight: 700;
-  margin: 5px auto;
-}
 .footer-list ul {
   padding: 5px;
   list-style: none;
@@ -549,6 +535,12 @@ nav ul li {
   /* ?input-container */
   .input-container {
     flex-direction: column;
+  }
+  #button {
+    width: 100%;
+  }
+  .input {
+    width: 100%;
   }
   .btn,
   .select {
