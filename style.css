@@ -31,12 +31,18 @@
   justify-content: space-between;
   align-items: center;
 }
+.header-logo {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
 .header-logo h2 {
   color: rgb(58, 58, 58);
   font-size: 24px;
   font-weight: 700;
   text-align: left;
 }
+
 .header-logo h2,
 .nav-list h2 {
   margin: 0;
@@ -63,10 +69,8 @@ nav ul li {
 /* !nav list complete here */
 
 /* ! banner sectipo START here */
-
 .banner-container {
   border-radius: 16px;
-
   background: linear-gradient(
       180deg,
       rgba(19, 19, 24, 0.8),
@@ -78,7 +82,7 @@ nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 60vh;
   margin: 2% auto;
 }
 .banner {
@@ -118,10 +122,38 @@ nav ul li {
   background: rgb(255, 84, 0);
   color: white;
 }
-
 /*! banner sectipo END here */
 
-/* card  */
+/*! our-tour section START here */
+.our-tour-container {
+  margin: 3% auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5%;
+}
+.content {
+  text-align: left;
+  width: 80%;
+}
+.content-title {
+  color: rgb(58, 58, 58);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3%;
+}
+
+.photo {
+  background-image: url(./images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5px;
+}
+/* !our-tour section END here */
+
+/* ! Destination Part START here  */
 .destination-content {
   margin: 5% auto;
   text-align: center;
@@ -180,6 +212,9 @@ nav ul li {
 .item7 {
   position: relative;
 }
+.grid-container img {
+  border-radius: 10px;
+}
 
 .center {
   font-size: xx-large;
@@ -190,8 +225,64 @@ nav ul li {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/* ! Destination Part END here  */
 
-/* .news-letter-container */
+/* !choose-container START here*/
+.choose-container {
+  margin: 5% auto;
+  padding: 10px;
+}
+.choose-container img {
+  width: 20%;
+  height: 20%;
+}
+.choose-content {
+  text-align: center;
+  margin: 1% 0%;
+}
+.choose-title {
+  color: rgb(19, 19, 24);
+  font-size: 40px;
+  font-weight: 800;
+  margin: 2% auto;
+}
+.choice-card-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.choice-card1,
+.price-card,
+.choice-card2 {
+  padding: 10px;
+  width: 48%;
+  gap: 10%;
+  box-sizing: border-box;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  border-radius: 16px;
+
+  background: rgba(251, 181, 99, 0.05);
+}
+.choice-card2 {
+  background: rgba(41, 206, 246, 0.05);
+}
+.card-title {
+  color: rgb(19, 19, 24);
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 30px;
+  margin: 5px auto;
+}
+.price-card {
+  margin: 2% auto;
+}
+.desc {
+  line-height: 25px;
+}
+/* ! choose-container END here*/
+
+/* !news-letter-container START here*/
 .news-letter-container {
   display: flex;
   justify-content: space-between;
@@ -227,35 +318,7 @@ nav ul li {
   right: 0;
   margin: 0;
 }
-/* .news-letter-container */
-/*! our-tour section START here */
-.our-tour-container {
-  margin: 3% auto;
-  padding: 10px;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
-  gap: 5%;
-}
-.content {
-  text-align: left;
-  width: 80%;
-}
-.content-title {
-  color: rgb(58, 58, 58);
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 3%;
-}
-
-.photo {
-  background-image: url(./images/Circle\ design.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 5px;
-}
-/* !our-tour section END here */
+/* !news-letter-container END here */
 
 /* !Body container part START here */
 .body-container {
@@ -315,10 +378,8 @@ nav ul li {
 /* !footer section END here */
 
 /* !styles for small devices */
-
 @media screen and (max-width: 768px) {
   /*! navbar part START here */
-
   /* ?fontawsome START styles here  */
   .fa-bars {
     margin-top: 25px;
@@ -346,7 +407,25 @@ nav ul li {
   }
   /* !navbar part END here */
 
-  /* !Banner part START here */
+  /* !Banner part START  here */
+  .banner-title {
+    font-size: 2rem;
+  }
+  .banner-desc {
+    color: rgb(255, 255, 255);
+    margin: 1% auto;
+  }
+  .input-container {
+    gap: 10px;
+    margin: 5% auto;
+  }
+  /* !Banner part END here */
+
+  .body-container {
+    width: 90%; /* body width */
+  }
+
+  /* !Our tour container START here */
   .our-tour-container {
     flex-direction: column-reverse;
     text-align: center;
@@ -359,22 +438,17 @@ nav ul li {
     width: 100%;
     height: 100%;
   }
+  .content {
+    width: 90%;
+  }
 
   .content-title,
   .content-info {
     text-align: left;
   }
+  /* !Our tour container END here */
 
-  /* .input-container */
-  .input-container {
-    flex-direction: column;
-  }
-  .btn,
-  .select {
-    width: 250px;
-  }
-  /* .input-container */
-
+  /* !destination START here  */
   .destination-content {
     width: 90%;
   }
@@ -393,13 +467,36 @@ nav ul li {
       "seventh seventh seventh seventh";
     margin: 10% auto 35% auto;
   }
+  /* !destination END here  */
 
-  /* .news-letter-container  */
+  /* !choice-card-container START here*/
+  .choice-card-container {
+    flex-direction: column;
+  }
+  .choice-card1,
+  .price-card,
+  .choice-card2 {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  /* !choice-card-container END here */
+
+  /* !news-letter-container  START here*/
   .news-letter-container {
     flex-direction: column;
     gap: 20px;
   }
-  /* .news-letter-container  */
 
-  /* !Banner part END here */
+  /* ?input-container */
+  .input-container {
+    flex-direction: column;
+  }
+  .btn,
+  .select {
+    width: 230px;
+  }
+  /* ?input-container */
+
+  /* !news-letter-container END here */
 }
