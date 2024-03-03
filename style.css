@@ -13,6 +13,9 @@
 body {
   font-family: "Mulish", sans-serif;
 }
+.home {
+  color: rgb(255, 84, 0);
+}
 .line {
   border: 1px solid black;
   width: 90%;
@@ -117,6 +120,7 @@ nav ul li {
   color: rgb(255, 255, 255);
   margin: 2% auto;
 }
+
 .input-container {
   display: flex;
   justify-content: center;
