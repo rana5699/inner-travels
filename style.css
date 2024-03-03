@@ -10,8 +10,9 @@
   font-weight: 800;
   color: rgb(255, 84, 0);
 }
+
 body {
-  font-family: "Mulish", sans-serif;
+  font-family: "Mulish", sans-serif; /* google font Mulish */
 }
 .home {
   color: rgb(255, 84, 0);
