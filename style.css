@@ -6,7 +6,7 @@
   font-size: 16px;
 }
 .logo {
-  font-size: 36px;
+  font-size: 1.8rem;
   font-weight: 800;
   color: rgb(255, 84, 0);
 }
@@ -158,7 +158,7 @@ nav ul li {
   color: rgb(58, 58, 58);
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 3%;
+  margin-bottom: 2%;
 }
 
 .photo {
@@ -317,7 +317,7 @@ nav ul li {
 }
 .achivement-title {
   color: rgb(255, 84, 0);
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 800;
   text-align: center;
   padding: 20px 0px;
@@ -424,7 +424,7 @@ nav ul li {
 /* !footer section END here */
 
 /* !styles for small devices */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   /*! navbar part START here */
   /* ?fontawsome START styles here  */
   .fa-bars {
@@ -442,6 +442,13 @@ nav ul li {
   .header-container {
     margin: 0%;
   }
+  .header-logo {
+    gap: 5px;
+  }
+  .header-logo img {
+    width: 30px;
+    height: 30px;
+  }
   .nav-container {
     flex-direction: row;
     justify-content: space-between;
@@ -451,19 +458,27 @@ nav ul li {
     height: 5px;
     display: none;
   }
+  .logo {
+    font-size: 1.5rem;
+  }
   /* !navbar part END here */
 
   /* !Banner part START  here */
+  .banner {
+    width: 95%;
+  }
   .banner-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .banner-desc {
     color: rgb(255, 255, 255);
     margin: 1% auto;
+    font-size: 16px;
+    line-height: normal;
   }
   .input-container {
-    gap: 10px;
-    margin: 5% auto;
+    gap: 8px;
+    margin: 3% auto;
   }
   /* !Banner part END here */
 
@@ -531,6 +546,12 @@ nav ul li {
     flex-wrap: wrap;
   }
 
+  /* .achivement-title */
+  .achivement-title {
+    font-size: 1.5rem;
+  }
+  /* .achivement-title */
+
   /* !news-letter-container  START here*/
   .news-letter-container {
     flex-direction: column;
@@ -550,6 +571,157 @@ nav ul li {
   .btn,
   .select {
     width: 230px;
+  }
+  /* ?input-container */
+
+  /* !news-letter-container END here */
+}
+
+/* tablet styles START here  */
+
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  /* ?fontawsome START styles here  */
+  .fa-bars {
+    margin-top: 35px;
+  }
+
+  .fa-solid.fa-bars {
+    display: block;
+    margin: 0%;
+  }
+  /* ?fontawsome styles END here  */
+
+  .header-container {
+    margin: 0%;
+  }
+  .header-logo {
+    gap: 15px;
+  }
+  .header-logo img {
+    width: 50px;
+    height: 50px;
+  }
+  .nav-container {
+    margin-bottom: 10px;
+  }
+  .list-items {
+    height: 5px;
+    display: none;
+  }
+  .logo {
+    font-size: 2.5rem;
+  }
+  /* !navbar part END here */
+
+  /* !Banner part START  here */
+  .banner {
+    width: 85%;
+  }
+  .banner-title {
+    font-size: 2.8rem;
+  }
+  .banner-desc {
+    color: rgb(255, 255, 255);
+    margin: 1% auto;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .input-container {
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 3% auto;
+  }
+  /* !Banner part END here */
+
+  /* !Our tour container START here */
+  .our-tour-container {
+    flex-direction: column-reverse;
+    text-align: center;
+
+    margin: auto;
+  }
+  .photo {
+    margin: 3% 0%;
+  }
+  .photo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .destination-content,  /* destination content */
+  .content {
+    text-align: center;
+    width: 100%;
+    background: rgba(41, 206, 246, 0.05);
+    padding: 2%;
+    border-radius: 8px;
+  }
+  /* !Our tour container END here */
+
+  /* !destination START here  */
+
+  .destination-title {
+    font-size: 1.8rem;
+  }
+
+  .grid-container {
+    grid-template-areas:
+      "first first second second"
+      "third third fourth fourth"
+      "fifth fifth six six"
+      "seventh seventh seventh seventh";
+    margin: 5% auto 5% auto;
+  }
+  /* !destination END here  */
+
+  /* !choice-card-container START here*/
+  .choice-card-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .choice-card1,
+  .price-card,
+  .choice-card2 {
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%;
+  }
+  /* !choice-card-container END here */
+
+  .achived {
+    flex-wrap: wrap;
+    gap: 3% auto;
+  }
+
+  /* .achivement-title */
+  .achivement-title {
+    font-size: 2.4rem;
+  }
+  .number {
+    font-size: 3rem;
+  }
+  /* .achivement-title */
+
+  /* !news-letter-container  START here*/
+  .news-letter-container {
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* ?input-container */
+  .input-container {
+    flex-direction: column;
+  }
+  #button {
+    width: 100%;
+  }
+  .input {
+    width: 100%;
+  }
+  .btn,
+  .select {
+    width: 90%;
   }
   /* ?input-container */
 
